@@ -1,0 +1,8 @@
+
+clock/node_modules/*
+gigasecond/node_modules/*
+hello-world/node_modules/*
+rna-transcription/node_modules/*
+two-fer/node_modules/*
+
+**/package*

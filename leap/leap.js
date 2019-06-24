@@ -1,3 +1,6 @@
 /*jshint esversion: 6 */
-const divisibleBy = num => (divider => num % divider == 0);
-export const isLeap = (year) => divisibleBy(year)(4) && divisibleBy(year)(100) && divisibleBy(year)(400)
+const divisibleBy = year => (divider => year % divider == 0);
+export const isLeap = (year) => {
+  const divisibleByYear = divisibleBy(year)
+  return (divisibleByYear(4) && !divisibleByYear(100)) || divisibleByYear(400)
+}
